@@ -1,0 +1,142 @@
+@import "../../Base";
+.footer {
+    display: flex;
+    padding: 120px 20px;
+    margin: 0 auto;
+    border-top: 2px solid lightgray;
+     div{
+        @extend %flex-column;
+
+        h4,a button{
+            text-transform: capitalize;
+            font-size: 15px;
+            font-weight: bold;
+        }
+     }
+     .korisni-linkovi {
+
+         a,button{ 
+             color: black;
+             text-align: left;
+             text-transform: capitalize;
+             margin-top: 20px;
+         }
+         button{
+             border: none;
+             padding: none;
+             width: fit-content;
+             outline: none;
+             background-color: transparent;
+         }
+         a {
+            text-decoration: none;
+            padding-left: 4px;
+         }
+     }
+    .socijalni-mrezi {
+        flex-grow: 1;
+        text-align: left;
+        padding-left: 70px;
+        div{
+            display: flex;
+            flex-direction: row;
+            span {
+                margin: 20px 20px 0 0;
+            }
+            i{
+                font-size: 30px;
+
+            }
+            .facebook {
+                color: #4c6ef4;
+            }
+            .linkedin{
+                color: #15aac0;
+            }
+            .instagram {
+                color: #f782ac;
+            }
+        }
+    }
+}
+.popupKontakt {
+    padding: 30px 60px;
+    border-radius: 15px;
+    background-color: #FCD232;
+    position: fixed;
+    top: 37vh;
+    left: 19%;
+    span{
+        @extend %flex-center;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        background-color: black;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+        i{
+            color: white;
+            font-size: 10px;
+        }
+    }
+    p{
+        color: black;
+        font-weight: bold;
+    }
+
+}
+.logo {
+    cursor: pointer;
+    img {
+        width: 70px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    .footer{
+        flex-direction: column;
+        padding: 50px 5px;
+        h4{
+            text-align: left;
+        }
+    .logo,.korisni-linkovi{
+        margin-bottom: 30px;
+    }
+    .logo{
+       order: 1;
+        img{
+            width: 50px;
+        }
+    }
+    .korisni-linkovi{
+        order: 2;
+        a, button {
+            margin-top: 10px!important;
+            padding: 0!important;
+        }
+    }
+    .socijalni-mrezi{
+        padding: 0!important;
+        order: 3;
+        div span {
+            margin: 10px 20px 0 0 !important;
+        }
+    }
+}
+
+}
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+  h4{
+    font-size: 14px;
+  }
+  a, button{
+      font-size: 11px;
+  }
+  .socijalni-mrezi{
+      i{
+          font-size: 25px;
+      }
+  }
+}

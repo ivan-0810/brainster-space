@@ -1,0 +1,72 @@
+@import "../../Base";
+
+.navbar-btn-forma {
+    width: 100%;
+    height:100vh;
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: white;
+    @extend %flex-center;
+    .nazad{
+        position: absolute;
+        top: 50px;
+        left: 100px;
+ 
+        i {
+            font-size: 11px;
+            margin-right: 10px;
+        }
+     }
+     .btn-style {
+        @extend %crnokopce;
+        padding: 3px 15px;
+        border-radius: 4px;
+        text-decoration: none;
+        border: none;
+     }
+    
+    form {
+        @extend %flex-column;
+        border: 2px solid black;
+        padding: 40px;
+        div {
+            margin-top: 15px;
+            display: flex;
+            label {
+                flex-basis: 30%;
+                text-align: left;
+                margin-bottom: 0;
+                padding: 5px;
+            }
+            input {
+                flex-basis: 65%;
+                margin-left: 15px;
+                padding-left: 5px;
+            }
+        }
+        button {
+            width: 60%;
+            margin: 34px auto 0;
+            text-transform: capitalize;
+        }
+       
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    .navbar-btn-forma{
+        .nazad{
+            top: 10px;
+            left: 10px;
+        }
+    }
+  }
+  @media only screen and (min-width: 425px) and (max-width: 768px){
+    .navbar-btn-forma{
+        .nazad{
+            top: 25px;
+            left: 10px;
+        }
+    }
+}

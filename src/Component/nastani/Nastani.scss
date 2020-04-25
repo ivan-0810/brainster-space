@@ -1,0 +1,223 @@
+@import "../../Base";
+.calendar,tr{
+    display: flex;
+
+}
+.calendar {
+    width: 90%;
+    margin: 30px auto;
+   flex-direction: column;
+ 
+   thead,tbody{
+       width: 100%;
+   }
+   tbody{
+       margin-top: 30px;
+   }
+   .calendar-header{
+       justify-content: space-between;
+       align-items: center;
+   }
+        h1{
+            margin-bottom: 0;
+        }
+        .arrows-wd-y{
+            flex-basis: 25%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            span:not(:last-child){
+                margin-right: 15px;
+            }
+            .wd-y{
+                text-transform: capitalize;
+                font-weight: bold;
+                font-size: 18px;
+            }
+            .arrow{
+                @extend %flex-center;
+                width: 40px;
+                height: 40px;
+                padding: 5px;
+                border: 1px solid black;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+        }
+        tr{
+            justify-content: space-evenly;
+        }
+        .week-day,.day,.emty-fields{
+            text-transform: uppercase;
+            text-align: right;
+            width: 13%;
+            height: 75px;
+            margin-top: 15px;
+            @extend %flex-column;
+            justify-content: flex-end;
+        }
+        .week-day{
+            font-weight: bold;
+            p{
+                margin-bottom: 0;
+                padding: 0 7px;
+            }
+        }
+        .week-day, .day {
+            background-color: #f3f3f3;
+        }
+        .days{
+            flex-wrap: wrap;  
+            .day{
+           
+                padding:0 7px;
+                cursor: pointer;
+                .txt-div{
+                    p:first-of-type {
+                        font-weight: bold;
+                      }   
+                }
+                .i-el{
+                    text-align: right;
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin: 0;
+                }
+            }
+         
+            .blue{
+                background-color: #162c9b;
+                color: white;
+            }
+            .red,.blue{
+                @extend %flex-column;
+                justify-content: space-between;
+                p{
+                    font-size: 8px;
+                    text-align: left;
+                    margin-left: 3px;
+                    margin-bottom: 0;
+                }
+              
+
+            }
+            .red{
+                background-color: #ff1300;
+                color: white;
+            }
+        }
+    
+       
+
+}
+.nastani {
+    .sledni-nastani {
+        display:none;
+        text-align: left;
+        padding: 20px 0;
+        h3{
+            color: white;
+            margin-left: 5px;
+            margin-bottom: 20px;
+        }
+        background-color: black;
+        .sledni-nastani-blue,.sledni-nastani-red {
+            h1,h3 {
+                display: none;
+            }
+            margin-left: 5px;
+            padding-left: 10px;
+            color: white;
+            background-color: transparent;
+         
+            p:last-child{
+                margin-bottom: 0;
+            }
+         
+        }
+        .sledni-nastani-blue{
+            border-left: 5px solid #162c9b;
+            margin-bottom: 15px;
+        }
+        .sledni-nastani-blue p:nth-child(2n),.sledni-nastani-red p:nth-child(2n){
+            font-weight: bold;
+            font-size: 15px!important;
+        }
+        .sledni-nastani-red{
+            border-left: 5px solid #ff1300;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    .calendar-header{
+        flex-direction: column;
+        align-items: flex-start!important;
+        td{
+            margin-bottom:15px;
+        }
+    }
+    .week-day{
+        display: none;
+    }
+   
+    .calendar{
+        .days { 
+            margin-bottom: 20px;
+            justify-content: space-evenly;
+            .emty-fields,.day{
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                margin: 0;
+            }
+            .day{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        p{
+            font-size: 13px!important;
+            text-align: center;
+        }
+    }
+}
+}
+    .blue .txt-div, .red .txt-div {
+        display: none;
+    }
+    .nastani{
+        .sledni-nastani{
+            display: block!important;
+        }
+    }
+    
+
+}
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+    .calendar{ 
+        .week-day p, .day p{
+            font-size: 13px;
+        } 
+        .blue , .red {
+            justify-content: flex-end!important;
+        }
+        .blue .txt-div, .red .txt-div {
+            display: none;
+        
+        }
+       
+    }
+    .sledni-nastani{
+        display: flex!important;
+        flex-wrap: wrap;
+        padding:20px 10px!important;
+        h3{
+            width: 100%;
+        }
+        .sledni-nastani-blue, .sledni-nastani-red{
+            flex-basis: 49%;
+        }
+    }
+}
