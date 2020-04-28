@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect,useRef } from 'react';
 import Navbar from "../Navbar/Navbar";
 import HomepageHeader from "../Homepage/HomepageHeader";
 import HomepageZaNas from './HomepageZaNas';
@@ -12,10 +12,15 @@ import { Context } from '../../Context/Context';
 import "./HomepageResponsive.scss";
 
 const Homepage = () => {
+  const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
   const { inovaciiForma,isCoworking,setIsCoworking } = useContext(Context)
+  const myRef = useRef(null)
+   const executeScroll = () => scrollToRef(myRef)
   
   useEffect(() =>{
-    isCoworking && window.scrollTo(0,3200)    
+   if(isCoworking) { 
+     executeScroll()
+   }    
     return () => {
       window.addEventListener("scroll", () => setIsCoworking(false));  
     }
@@ -29,7 +34,7 @@ const Homepage = () => {
         <HomepageZaNas/>
         <Edukacija />
         <HomepageNastani />
-        <HomepageCoworking />
+        <HomepageCoworking r={myRef} />
         <HomepageProstorZaNastani />
         <Footer />
         </div>

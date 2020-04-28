@@ -1,4 +1,8 @@
 @media only screen and (min-width: 320px) and (max-width: 425px) {
+    .homepage-header {
+        background-position: center;
+        background-size: cover;
+    }
     h1 {
         font-size: 20px;
     }
@@ -74,7 +78,7 @@
             flex-basis: 49%;
             height: 442px;
             .img-div{
-                height: 170px;  
+                height: 50vh;  
         }
     
         .arrow{

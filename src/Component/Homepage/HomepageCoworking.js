@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import coworking from "../../sliki/za_nas/coworking.jpg";
 import TextDiv from '../Prostor_za_nastani/TextDiv';
 
-const HomepageCoworking = () => {
+const HomepageCoworking = ({r}) => {
+  console.log(r);
+  
   const [mesto, setMesto] = useState(false);
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -13,7 +15,7 @@ const HomepageCoworking = () => {
     }
   },[mesto]);
   return (
-    <div className="edukacija homepage-coworking">
+    <div className="edukacija homepage-coworking" ref={r}>
       <div className="txt-div">
         <button className="sold-btn">sold out</button>
         <TextDiv

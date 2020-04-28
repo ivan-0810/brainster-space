@@ -15,22 +15,19 @@
     width: 50px;
     height: 50px;
     .line-one{
-        width: 40px;
-        color:#FCD232;
-            height: 3px;
-             margin-bottom: 5px;
-    }
-    .line-two  {
         width: 30px;
     }
-    .line-three{
+    .line-two  {
         width: 20px;
     }
-    // .line-one,.line-two,.line-three{
-    //     color:#FCD232;
-    //     height: 3px;
-    //     margin-bottom: 5px;
-    // }
+    .line-three{
+        width: 10px;
+    }
+    .line-one,.line-two,.line-three{
+        background-color:#FCD232;
+        height: 3px;
+        margin-bottom: 5px;
+    }
 }
 .spaceblog-navbar {
     width: 65%;
@@ -212,7 +209,7 @@
         padding: 0;
         margin: 0;
         background-color: black;
-        padding-bottom: 100px;
+        padding-bottom: 100px; 
         p,a, button {
             color: white!important;
             margin-top: 15px;
@@ -226,10 +223,11 @@
             color: white!important;
         }
     }
+    .spaceblog-header, .content-change, .overlay{
+        height: fit-content;
+    }
    .spaceblog-header{
-       .spaceblog-header{
-           height: 100vh;
-       }
+     
        .content-change{
           
         .overlay{

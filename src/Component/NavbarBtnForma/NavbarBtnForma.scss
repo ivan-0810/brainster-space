@@ -55,7 +55,17 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 425px) {
-    .navbar-btn-forma{
+
+    .navbar-btn-forma  {
+        z-index: 1;
+        form {
+            div{
+                font-size: 11px;
+            }
+            button{
+                font-size: 13px;
+            }
+        }
         .nazad{
             top: 10px;
             left: 10px;

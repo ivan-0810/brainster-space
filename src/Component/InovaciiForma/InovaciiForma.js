@@ -44,7 +44,7 @@ const handleSubmit = () => {
             
                         <div className="btn-forma-div">
                         <button className="isprati" onClick={() => setInovaciiForma(false)}>врати се назад</button>
-                        <button type="submit"  className="priklucise"><i className="fas fa-arrow-right"></i>СЌубмитирај</button>
+                        <button type="submit"  className="priklucise"><i className="fas fa-arrow-right"></i>Субмитирај</button>
                         </div>
                   
                     </div>

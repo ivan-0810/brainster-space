@@ -28,7 +28,8 @@ const Akademii = () => {
         <div className="img-div" style={{
           backgroundImage: "url(" + require(`../../sliki/za_nas/edukacija.jpg`) + ")",
           backgroundSize: "cover",
-          backgroundPosition: "center"
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat"
         }}></div>
         <div className="akademii-cards">
           {H1.map((card, inx) => (
