@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/brainster-space/static/css/main.58d0c783.chunk.css",
-    "main.js": "/brainster-space/static/js/main.c6c46aba.chunk.js",
-    "main.js.map": "/brainster-space/static/js/main.c6c46aba.chunk.js.map",
+    "main.css": "/brainster-space/static/css/main.ca8f4970.chunk.css",
+    "main.js": "/brainster-space/static/js/main.0329a96a.chunk.js",
+    "main.js.map": "/brainster-space/static/js/main.0329a96a.chunk.js.map",
     "runtime-main.js": "/brainster-space/static/js/runtime-main.3880a7ab.js",
     "runtime-main.js.map": "/brainster-space/static/js/runtime-main.3880a7ab.js.map",
     "static/js/2.7304df12.chunk.js": "/brainster-space/static/js/2.7304df12.chunk.js",
     "static/js/2.7304df12.chunk.js.map": "/brainster-space/static/js/2.7304df12.chunk.js.map",
     "index.html": "/brainster-space/index.html",
-    "precache-manifest.70e1205ec4004fe3bd0e58b3a3968d5c.js": "/brainster-space/precache-manifest.70e1205ec4004fe3bd0e58b3a3968d5c.js",
+    "precache-manifest.0fc4e146fb3f0a0f140e76533d95019d.js": "/brainster-space/precache-manifest.0fc4e146fb3f0a0f140e76533d95019d.js",
     "service-worker.js": "/brainster-space/service-worker.js",
-    "static/css/main.58d0c783.chunk.css.map": "/brainster-space/static/css/main.58d0c783.chunk.css.map",
+    "static/css/main.ca8f4970.chunk.css.map": "/brainster-space/static/css/main.ca8f4970.chunk.css.map",
     "static/js/2.7304df12.chunk.js.LICENSE.txt": "/brainster-space/static/js/2.7304df12.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/brainster-space/static/media/1.09b258d8.jpg",
     "static/media/2.jpg": "/brainster-space/static/media/2.e3abc4d2.jpg",
@@ -49,7 +49,7 @@
   "entrypoints": [
     "static/js/runtime-main.3880a7ab.js",
     "static/js/2.7304df12.chunk.js",
-    "static/css/main.58d0c783.chunk.css",
-    "static/js/main.c6c46aba.chunk.js"
+    "static/css/main.ca8f4970.chunk.css",
+    "static/js/main.0329a96a.chunk.js"
   ]
 }
