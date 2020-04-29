@@ -1,12 +1,17 @@
 @import "../../Base";
 .calendar,tr{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
 }
 .calendar {
     width: 90%;
     margin: 30px auto;
-   flex-direction: column;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
  
    thead,tbody{
        width: 100%;
@@ -15,17 +20,28 @@
        margin-top: 30px;
    }
    .calendar-header{
-       justify-content: space-between;
-       align-items: center;
+       -webkit-box-pack: justify;
+           -ms-flex-pack: justify;
+               justify-content: space-between;
+       -webkit-box-align: center;
+           -ms-flex-align: center;
+               align-items: center;
    }
         h1{
             margin-bottom: 0;
         }
         .arrows-wd-y{
-            flex-basis: 25%;
+            -ms-flex-preferred-size: 25%;
+                flex-basis: 25%;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: flex-end;
-            align-items: center;
+            -webkit-box-pack: end;
+                -ms-flex-pack: end;
+                    justify-content: flex-end;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             span:not(:last-child){
                 margin-right: 15px;
             }
@@ -46,7 +62,9 @@
 
         }
         tr{
-            justify-content: space-evenly;
+            -webkit-box-pack: space-evenly;
+                -ms-flex-pack: space-evenly;
+                    justify-content: space-evenly;
         }
         .week-day,.day,.emty-fields{
             text-transform: uppercase;
@@ -55,7 +73,9 @@
             height: 75px;
             margin-top: 15px;
             @extend %flex-column;
-            justify-content: flex-end;
+            -webkit-box-pack: end;
+                -ms-flex-pack: end;
+                    justify-content: flex-end;
         }
         .week-day{
             font-weight: bold;
@@ -68,7 +88,8 @@
             background-color: #f3f3f3;
         }
         .days{
-            flex-wrap: wrap;  
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;  
             .day{
            
                 padding:0 7px;
@@ -92,7 +113,9 @@
             }
             .red,.blue{
                 @extend %flex-column;
-                justify-content: space-between;
+                -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                        justify-content: space-between;
                 p{
                     font-size: 8px;
                     text-align: left;
@@ -153,8 +176,13 @@
 
 @media only screen and (min-width: 320px) and (max-width: 425px) {
     .calendar-header{
-        flex-direction: column;
-        align-items: flex-start!important;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start!important;
+            -ms-flex-align: start!important;
+                align-items: flex-start!important;
         td{
             margin-bottom:15px;
         }
@@ -166,7 +194,9 @@
     .calendar{
         .days { 
             margin-bottom: 20px;
-            justify-content: space-evenly;
+            -webkit-box-pack: space-evenly;
+                -ms-flex-pack: space-evenly;
+                    justify-content: space-evenly;
             .emty-fields,.day{
                 width: 35px;
                 height: 35px;
@@ -174,9 +204,15 @@
                 margin: 0;
             }
             .day{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
         p{
             font-size: 13px!important;
             text-align: center;
@@ -201,7 +237,9 @@
             font-size: 13px;
         } 
         .blue , .red {
-            justify-content: flex-end!important;
+            -webkit-box-pack: end!important;
+                -ms-flex-pack: end!important;
+                    justify-content: flex-end!important;
         }
         .blue .txt-div, .red .txt-div {
             display: none;
@@ -210,14 +248,18 @@
        
     }
     .sledni-nastani{
+        display: -webkit-box!important;
+        display: -ms-flexbox!important;
         display: flex!important;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         padding:20px 10px!important;
         h3{
             width: 100%;
         }
         .sledni-nastani-blue, .sledni-nastani-red{
-            flex-basis: 49%;
+            -ms-flex-preferred-size: 49%;
+                flex-basis: 49%;
         }
     }
 }

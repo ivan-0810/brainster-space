@@ -24,9 +24,14 @@ h1 {
 }
 //zanas homepage
 .box-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 
     margin: 50px 0;
     h1{
@@ -41,9 +46,12 @@ h1 {
     }
     .homepage-zanas-card{
         &:hover{
-            transform: scale(1.01);
+            -webkit-transform: scale(1.01);
+                -ms-transform: scale(1.01);
+                    transform: scale(1.01);
         }
-        flex-basis: 32%;
+        -ms-flex-preferred-size: 32%;
+            flex-basis: 32%;
         height: 530px;
         border-radius: 4px;
         border: 1px solid lightgray;
@@ -86,13 +94,23 @@ h1 {
 }
 // edukacija homepage
 .edukacija {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 50px 0;
     .txt-div {
-        flex-basis: 45%;
+        -ms-flex-preferred-size: 45%;
+            flex-basis: 45%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: flex-start;
-        flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         padding: 0 40px;
      
         
@@ -122,7 +140,8 @@ h1 {
          
     }
     .img-div{
-        flex-basis: 55%;
+        -ms-flex-preferred-size: 55%;
+            flex-basis: 55%;
         border-radius: 4px;
         img{
             width: 100%;
@@ -151,7 +170,10 @@ h1 {
 
 ///Nome Page coworking
 .homepage-coworking {
-    flex-direction: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
         .sold-btn {
             padding: 3px 10px;
             margin-bottom: 10px;
@@ -170,6 +192,8 @@ h1 {
         background-color: #FCD232;
         color: black;
         margin-top: 10px;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
         font-weight: bold;
     }

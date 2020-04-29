@@ -1,39 +1,58 @@
 @import "../../Base"; 
 .akademii{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 90%;
     margin: 30px auto;
 
     .txt-div{
-        flex-basis: 30%;
+        -ms-flex-preferred-size: 30%;
+            flex-basis: 30%;
         @extend%flex-column;
     }
     .img-div{
-        flex-basis: 65%;
+        -ms-flex-preferred-size: 65%;
+            flex-basis: 65%;
         border-radius: 4px;
         height: 90vh;
     }
     .akademii-cards {
         width: 100%;
         margin: 50px 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         .card{
             margin-bottom: 25px;
-            flex-basis: 32%;
+            -ms-flex-preferred-size: 32%;
+                flex-basis: 32%;
             cursor: pointer;
             border-radius: 10px;
         &:hover{
-            transform: scale(1.01);
+            -webkit-transform: scale(1.01);
+                -ms-transform: scale(1.01);
+                    transform: scale(1.01);
             }
             .overlay{
                 height: 100%;
                 @extend %flex-column;
-                justify-content: space-between;
-                align-items: flex-start;
+                -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                        justify-content: space-between;
+                -webkit-box-align: start;
+                    -ms-flex-align: start;
+                        align-items: flex-start;
                 h1,p {
                     color: white;
                     text-align: left;
@@ -49,18 +68,24 @@
                 }
                 div{
                     div{
+                        display: -webkit-box;
+                        display: -ms-flexbox;
                         display: flex;
-                        align-items: center;
+                        -webkit-box-align: center;
+                            -ms-flex-align: center;
+                                align-items: center;
                         margin-bottom: 15px;
                         i{  
-                            flex-basis: 10%;
+                            -ms-flex-preferred-size: 10%;  
+                                flex-basis: 10%;
                             font-size: 20px;
                             color: white;
                         }
                     }
                 }
                 p{
-                    flex-basis: 88%;
+                    -ms-flex-preferred-size: 88%;
+                        flex-basis: 88%;
                     font-weight: bold;
                     text-transform: capitalize;
                     margin-left: 15px;
@@ -73,16 +98,21 @@
 }
 @media only screen and (min-width: 320px) and (max-width: 425px) {
     .akademii{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         h1{
             margin-bottom: 20px;
         }
         .img-div{
-            flex-basis: unset;
+            -ms-flex-preferred-size: unset;
+                flex-basis: unset;
         }
         .akademii-cards{
             .card{
-                flex-basis: 100%;
+                -ms-flex-preferred-size: 100%;
+                    flex-basis: 100%;
             }
         }
     }
@@ -90,15 +120,20 @@
 }
 @media only screen and (min-width: 425px) and (max-width: 768px) {
     .akademii{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         width: 95%;
         .img-div{
-            flex-basis: unset;
+            -ms-flex-preferred-size: unset;
+                flex-basis: unset;
         }
         .akademii-cards{
             
             .card{
-                flex-basis: 49%;
+                -ms-flex-preferred-size: 49%;
+                    flex-basis: 49%;
             }
         }
     }

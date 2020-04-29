@@ -7,9 +7,16 @@
 }
 .spaceblog-sandwich{
     display: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: black;
     border-radius: 8px;
     width: 50px;
@@ -32,9 +39,15 @@
 .spaceblog-navbar {
     width: 65%;
     margin-left: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     text-transform: uppercase;
     background-color: #f5f5f5;
     padding: 20px;
@@ -86,8 +99,14 @@
         .brainster_logo{
             padding-bottom: 100px;
             div{
+              display: -webkit-box;
+              display: -ms-flexbox;
               display: flex;
-              align-items: center;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              width: -webkit-fit-content;
+              width: -moz-fit-content;
               width: fit-content;
               margin: 0 auto;
               p{
@@ -112,6 +131,8 @@
             }
         }
         .description {
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
             width: fit-content;
             @extend %zolto-kopce;
             padding: 8px 17px;
@@ -120,8 +141,12 @@
             font-weight: bold;
         }
         .button-span{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             width: 100%;
             span{
                 color: $yellow;
@@ -155,8 +180,12 @@
         }
     }
     .space-header-btn {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: flex-end;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
         width: 100%;
         .arrow {
             @extend %arrow-style;
@@ -184,6 +213,8 @@
        left: 10px;
        font-size: 13px;
        @extend%zolto-kopce;
+       width: -webkit-fit-content!important;
+       width: -moz-fit-content!important;
        width: fit-content!important;
        padding: 15px!important;
        border-radius: 15px!important;
@@ -195,6 +226,8 @@
 
 @media only screen and (min-width: 320px) and (max-width: 425px) {
     .spaceblog-sandwich{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         position: absolute;
         top: 20px;
@@ -204,7 +237,10 @@
         display: none;
     }
     .spaceblog-navbar {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         width: 100%;
         padding: 0;
         margin: 0;
@@ -224,6 +260,8 @@
         }
     }
     .spaceblog-header, .content-change, .overlay{
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
     }
    .spaceblog-header{
@@ -231,7 +269,10 @@
        .content-change{
           
         .overlay{
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
             
            .brainster_logo{
                padding: 50px;
@@ -250,8 +291,12 @@
                     width: 48%;
                 }
                 .space-header-btn{
-                    justify-content: space-between;
-                    align-items: center;
+                    -webkit-box-pack: justify;
+                        -ms-flex-pack: justify;
+                            justify-content: space-between;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
                 }  
                 .counter-phone {
                     display: block;
@@ -297,7 +342,10 @@
             width: 90%!important;
         }
         .button-span{
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
             button{
                 width: 35%;
             }

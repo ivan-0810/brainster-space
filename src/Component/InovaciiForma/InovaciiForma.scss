@@ -17,6 +17,8 @@
             width: 75%;
             height: 55vh;
             border-radius: 4px;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             div{
                 @extend %flex-column;
@@ -43,7 +45,9 @@
             }
             .btn-forma-div{
                 @extend %flex-row;
-                justify-content: flex-end;
+                -webkit-box-pack: end;
+                    -ms-flex-pack: end;
+                        justify-content: flex-end;
                 padding: 53px 0 0;
                 button{
                     border: none;
@@ -70,7 +74,10 @@
 
     .inovacii-forma {
         form {
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
             height: 95%!important;
             font-size: 11px;
             .btn-forma-div{
@@ -91,6 +98,8 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .inovacii-forma{
         form{
+            height: -webkit-fit-content!important;
+            height: -moz-fit-content!important;
             height: fit-content!important;
         }
     }

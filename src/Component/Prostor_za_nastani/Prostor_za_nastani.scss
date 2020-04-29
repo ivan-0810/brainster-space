@@ -9,19 +9,28 @@ img{
 .txt-div{
     text-align: left;
     @extend %flex-column;
-    justify-content: center;
-    align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 .box-1,.box-2,.box-3, .box-5{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 h1{
     margin-bottom: 40px;
 }
 .box-1{
     .txt-div{
-        flex-basis: 30%;
+        -ms-flex-preferred-size: 30%;
+            flex-basis: 30%;
      
       
         button{
@@ -38,22 +47,31 @@ h1{
         }
     }
     .img-div{
-        flex-basis: 60%;
+        -ms-flex-preferred-size: 60%;
+            flex-basis: 60%;
       
     }
 }
 .box-2{
     margin-top: 50px;
     .txt-div{
-        flex-basis: 25%;
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
     }
     .img-div{
-        flex-basis: 70%;
+        -ms-flex-preferred-size: 70%;
+            flex-basis: 70%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
         div{
-            flex-basis: 30%;
+            -ms-flex-preferred-size: 30%;
+                flex-basis: 30%;
             .image{
                 height: 160px;
                 img{
@@ -66,42 +84,67 @@ h1{
 .box-3{
     margin-top: 50px;
     .txt-div{
-        flex-basis: 32%;
+        -ms-flex-preferred-size: 32%;
+            flex-basis: 32%;
         
     }
     .img-div{
-        flex-basis: 65%;
+        -ms-flex-preferred-size: 65%;
+            flex-basis: 65%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         height: 75vh;
         .img-1 {
-            flex-basis: 48%;
+            -ms-flex-preferred-size: 48%;
+                flex-basis: 48%;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                flex-direction: column;
-                justify-content: space-between;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                        justify-content: space-between;
             
             .first-img-div{
-                flex-basis: 48%;
+                -ms-flex-preferred-size: 48%;
+                    flex-basis: 48%;
             }
            .second-img-div{
-                flex-basis: 48%;
+                -ms-flex-preferred-size: 48%;
+                    flex-basis: 48%;
+               display: -webkit-box;
+               display: -ms-flexbox;
                display: flex;
-               justify-content: space-between;
+               -webkit-box-pack: justify;
+                   -ms-flex-pack: justify;
+                       justify-content: space-between;
                div{
-                   flex-basis:48%;
+                   -ms-flex-preferred-size:48%;
+                       flex-basis:48%;
                }
            }
         }
         .img-2{
-            flex-basis: 48%;
+            -ms-flex-preferred-size: 48%;
+                flex-basis: 48%;
         }
     }
 }
 .box-4 {
     margin: 50px 0;
     .span-div {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         width: 75%;
     }
     h1{
@@ -111,6 +154,8 @@ h1{
     .planet{
         @extend %flex-center;
         background-color: black;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
         padding: 6px 12px;
         border-radius: 4px;
@@ -130,7 +175,8 @@ h1{
 .box-5 {
     margin: 50px 0 100px 0;
     .img-div{
-        flex-basis: 44%;
+        -ms-flex-preferred-size: 44%;
+            flex-basis: 44%;
         height: 90vh;
     }
 
@@ -147,16 +193,23 @@ h1{
         }
     }
     .box-2{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         .img-div{
             div{
-                flex-basis: unset;
+                -ms-flex-preferred-size: unset;
+                    flex-basis: unset;
                 text-align: left;
             }
         }
     }
     .box-3{
-        flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
         .img-div{
            display: block;
            .img-1{
@@ -188,25 +241,38 @@ h1{
         }
     }
     .box-5{
-        flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
         .img-div{
-            flex-basis: unset;
+            -ms-flex-preferred-size: unset;
+                flex-basis: unset;
         }
     }
 }
 @media only screen and (min-width: 425px) and (max-width: 768px) {
     .box-1{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         .txt-div{
             padding-bottom: 20px!important;
         }
     }
     .box-2{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         .img-div{
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             div{
-                flex-basis: 48%;
+                -ms-flex-preferred-size: 48%;
+                    flex-basis: 48%;
                  p {
                     text-align: left;
                 }
@@ -215,13 +281,17 @@ h1{
         }
     }
     .box-3{
-        flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
         .img-div{
             .img-1{
                 display: block;
                 
             .first-img-div{
-                flex-basis: unset;
+                -ms-flex-preferred-size: unset;
+                    flex-basis: unset;
                 width: 100%;
                 height: 160px;
                 margin-bottom: 20px;
@@ -239,8 +309,13 @@ h1{
         
     }
     .box-5{
-        flex-direction: row-reverse;
-        justify-content: flex-end;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
         .txt-div{
             margin-left: 20px;
         }
