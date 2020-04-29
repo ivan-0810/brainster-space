@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6202422097756ffb84d55b009e9ea5df",
+    "revision": "cd3d99e04cf48a66c20a64350c98ea72",
     "url": "/brainster-space/index.html"
   },
   {
-    "revision": "6a3782b4fb2c976a186e",
-    "url": "/brainster-space/static/css/main.78bdc375.chunk.css"
+    "revision": "764caa3ec826cf6f7cf1",
+    "url": "/brainster-space/static/css/main.dbfbf235.chunk.css"
   },
   {
     "revision": "a757a4dce2fff9403991",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/brainster-space/static/js/2.7304df12.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6a3782b4fb2c976a186e",
+    "revision": "764caa3ec826cf6f7cf1",
     "url": "/brainster-space/static/js/main.8573d45f.chunk.js"
   },
   {

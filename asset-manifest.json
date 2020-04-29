@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/brainster-space/static/css/main.78bdc375.chunk.css",
+    "main.css": "/brainster-space/static/css/main.dbfbf235.chunk.css",
     "main.js": "/brainster-space/static/js/main.8573d45f.chunk.js",
     "main.js.map": "/brainster-space/static/js/main.8573d45f.chunk.js.map",
     "runtime-main.js": "/brainster-space/static/js/runtime-main.3880a7ab.js",
@@ -8,9 +8,9 @@
     "static/js/2.7304df12.chunk.js": "/brainster-space/static/js/2.7304df12.chunk.js",
     "static/js/2.7304df12.chunk.js.map": "/brainster-space/static/js/2.7304df12.chunk.js.map",
     "index.html": "/brainster-space/index.html",
-    "precache-manifest.8e7e594d38f0569f3e4e4bc6999665b0.js": "/brainster-space/precache-manifest.8e7e594d38f0569f3e4e4bc6999665b0.js",
+    "precache-manifest.6bff9266f589c9498e1e18b96d11cf9e.js": "/brainster-space/precache-manifest.6bff9266f589c9498e1e18b96d11cf9e.js",
     "service-worker.js": "/brainster-space/service-worker.js",
-    "static/css/main.78bdc375.chunk.css.map": "/brainster-space/static/css/main.78bdc375.chunk.css.map",
+    "static/css/main.dbfbf235.chunk.css.map": "/brainster-space/static/css/main.dbfbf235.chunk.css.map",
     "static/js/2.7304df12.chunk.js.LICENSE.txt": "/brainster-space/static/js/2.7304df12.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/brainster-space/static/media/1.09b258d8.jpg",
     "static/media/2.jpg": "/brainster-space/static/media/2.e3abc4d2.jpg",
@@ -49,7 +49,7 @@
   "entrypoints": [
     "static/js/runtime-main.3880a7ab.js",
     "static/js/2.7304df12.chunk.js",
-    "static/css/main.78bdc375.chunk.css",
+    "static/css/main.dbfbf235.chunk.css",
     "static/js/main.8573d45f.chunk.js"
   ]
 }
