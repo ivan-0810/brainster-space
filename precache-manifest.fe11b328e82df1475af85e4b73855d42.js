@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cd3d99e04cf48a66c20a64350c98ea72",
+    "revision": "68f52d202266a3e23a37626b0516e0d7",
     "url": "/brainster-space/index.html"
   },
   {
-    "revision": "764caa3ec826cf6f7cf1",
-    "url": "/brainster-space/static/css/main.dbfbf235.chunk.css"
+    "revision": "e3d13ae170e59425cbd1",
+    "url": "/brainster-space/static/css/main.0d51efaf.chunk.css"
   },
   {
     "revision": "a757a4dce2fff9403991",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/brainster-space/static/js/2.7304df12.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "764caa3ec826cf6f7cf1",
-    "url": "/brainster-space/static/js/main.8573d45f.chunk.js"
+    "revision": "e3d13ae170e59425cbd1",
+    "url": "/brainster-space/static/js/main.155b8d52.chunk.js"
   },
   {
     "revision": "e68d14c4f8a3f131b1a7",
@@ -120,8 +120,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/brainster-space/static/media/KITCHEN_03.5325200a.jpg"
   },
   {
-    "revision": "090ce3d30081270fd168995d6d18dc1b",
-    "url": "/brainster-space/static/media/brainster_space_logo.090ce3d3.svg"
+    "revision": "635d779c9ca6751fbff237e4c9e02eee",
+    "url": "/brainster-space/static/media/brainster_space_logo.635d779c.svg"
   },
   {
     "revision": "85d74911ceb353de05e8e10f9768e05e",
