@@ -17,6 +17,8 @@ import Box3 from './Box3';
 import Box4 from "./Box4";
 import Box5 from './Box5';
 import { Context } from '../../Context/Context';
+import Banner from '../Banner';
+import banners from '../../banners'
 
 const Prostor_za_nastani = () => {
     const {scrollToNastani,setScrollToNastani} = useContext(Context)
@@ -48,6 +50,21 @@ const Prostor_za_nastani = () => {
         <Fragment>
             <Navbar />
             <div className="prostor-za-nastani">
+            <Banner
+            src={banners.position_L2.src && banners.position_L2.src}
+            id={banners.position_L2.id}
+            classname={banners.position_L2.classname}
+          />
+           <Banner
+            src={banners.position_L5.src && banners.position_L5.src}
+            id={banners.position_L5.id}
+            classname={banners.position_L5.classname}
+          />
+            <Banner
+            src={banners.position_L10.src && banners.position_L10.src}
+            id={banners.position_L10.id}
+            classname={banners.position_L10.classname}
+          />
                 <div className="box-1">
                     <Box1 scrolni={scrolni}/>
                 </div>

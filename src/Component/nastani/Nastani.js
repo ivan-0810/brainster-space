@@ -5,7 +5,8 @@ import "./Nastani.scss";
 import Footer from '../footer/Footer';
 import { Context } from '../../Context/Context';
 import TextDiv from "../Prostor_za_nastani/TextDiv";
-
+import Banner from '../Banner';
+import banners from '../../banners'
 
 
 const Nastani = (props) => {
@@ -163,6 +164,21 @@ const Nastani = (props) => {
   return (
     <div className="nastani">
       <Navbar />
+      <Banner
+            src={banners.position_L2.src && banners.position_L2.src}
+            id={banners.position_L2.id}
+            classname={banners.position_L2.classname}
+          />
+           <Banner
+            src={banners.position_L5.src && banners.position_L5.src}
+            id={banners.position_L5.id}
+            classname={banners.position_L5.classname}
+          />
+            <Banner
+            src={banners.position_L10.src && banners.position_L10.src}
+            id={banners.position_L10.id}
+            classname={banners.position_L10.classname}
+          />
       <table className="calendar">
         <thead>
           <tr className="calendar-header">

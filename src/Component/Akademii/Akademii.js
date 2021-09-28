@@ -3,8 +3,8 @@ import Navbar from '../Navbar/Navbar';
 import TextDiv from '../Prostor_za_nastani/TextDiv';
 import "./Akademii.scss";
 import Footer from '../footer/Footer';
-
-
+import Banner from '../Banner';
+import banners from '../../banners'
 const Akademii = () => {
   const H1 = ["Академија за графички дизајн", "Академија за дигитален маркетинг", "Академија за Front-end програмирање", "Академија за Full-stack програмирање", "Академија за Data Science", "Академија за software tes"];
   const overlay = {
@@ -19,6 +19,21 @@ const Akademii = () => {
     <Fragment >
       <Navbar />
       <div className="akademii">
+      <Banner
+            src={banners.position_L2.src && banners.position_L2.src}
+            id={banners.position_L2.id}
+            classname={banners.position_L2.classname}
+          />
+           <Banner
+            src={banners.position_L5.src && banners.position_L5.src}
+            id={banners.position_L5.id}
+            classname={banners.position_L5.classname}
+          />
+            <Banner
+            src={banners.position_L10.src && banners.position_L10.src}
+            id={banners.position_L10.id}
+            classname={banners.position_L10.classname}
+          />
         <div className="txt-div">
           <TextDiv
             h1="Академии"

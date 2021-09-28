@@ -10,7 +10,8 @@ import HomepageProstorZaNastani from "./HomepageProstorZaNastani"
 import Footer from '../footer/Footer';
 import { Context } from '../../Context/Context';
 import "./HomepageResponsive.scss";
-
+import Banner from '../Banner';
+import banners from '../../banners';
 const Homepage = () => {
   const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
   const { inovaciiForma,isCoworking,setIsCoworking } = useContext(Context)
@@ -31,6 +32,21 @@ const Homepage = () => {
         {inovaciiForma && <InovaciiForma/>}
         <HomepageHeader />
         <div className="homepage-cont">
+        <Banner
+            src={banners.position_L2.src && banners.position_L2.src}
+            id={banners.position_L2.id}
+            classname={banners.position_L2.classname}
+          />
+           <Banner
+            src={banners.position_L5.src && banners.position_L5.src}
+            id={banners.position_L5.id}
+            classname={banners.position_L5.classname}
+          />
+            <Banner
+            src={banners.position_L10.src && banners.position_L10.src}
+            id={banners.position_L10.id}
+            classname={banners.position_L10.classname}
+          />
         <HomepageZaNas/>
         <Edukacija />
         <HomepageNastani />
